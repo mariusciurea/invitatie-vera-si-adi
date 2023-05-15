@@ -1,1 +1,1 @@
-web gunicorn invitatie_nunta.wsgi:application --log--file -
+web: gunicorn invitatie_nunta.wsgi
