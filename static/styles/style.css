@@ -1,0 +1,320 @@
+@font-face {
+  font-family: "MrsEavesRomanRegular";
+  font-style: normal;
+  font-weight: 500;
+  src: local("MrsEavesRomanRegular"), local('MrsEavesRomanRegular'), url("../ttf/MrsEavesRomanRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MrsEavesItalicRegular";
+  font-style: normal;
+  font-weight: 500;
+  src: local("MrsEavesItalic"), local('MrsEavesItalic'), url("../ttf/MrsEavesItalicRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "WhiteGardenRegular";
+  font-style: normal;
+  font-weight: 400;
+  src: local("WhiteGardenRegular"), local('WhiteGardenRegular'), url("../otf/WhiteGardenRegular.otf") format("opentype");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+  font-family: "MrsEavesRomanRegular";
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.6;
+  color: rgb(31, 34, 29);
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  font-variant-ligatures: none;
+}
+
+header {
+  padding: 50px 0px 0px;
+  background-color: transparent;
+  background-image: url(../png/Header.png), none;
+  background-size: 800px, auto;
+  background-position: center top, left top;
+  background-repeat: no-repeat, repeat;
+}
+
+header .NamesContainer {
+  font-family: "WhiteGardenRegular";
+}
+
+.NamesContainer h1 {
+  margin: 0px;
+  font-size: 45.6px;
+  font-weight: 400;
+}
+
+.NamesContainer div {
+  font-size: 43.4px;
+}
+
+nav ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li a:hover {
+  color: rgb(201, 176, 151);
+}
+
+
+li a:visited {
+  color: rgb(31, 34, 29);
+}
+
+main {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.Main--Section {
+  padding-bottom: 80px;
+
+}
+
+.Main--Section img {
+  display: block;
+  width: 100%;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+  border: 8px solid rgb(255, 255, 255);
+  box-shadow: rgb(0 0 0 / 25%) 0px 1px 4px;
+}
+
+.Main--Section h3 {
+  margin: 0px;
+  font-family: "WhiteGardenRegular";
+  font-size: 43.4px;
+  font-weight: 400;  
+}
+
+.Main--Section div {
+  line-height: 1.4;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 19.2px;
+}
+
+section {
+  padding: 100px 0px 80px 0px;
+  background-color: transparent;
+  background-image: url(../png/SmallGraphic.png);
+  background-size: 100px 100px;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+section h2 {
+  margin: 0px 0px 40px 0px;
+  font-size: 19.2px;
+  font-weight: 400;
+}
+
+section h3 {
+  margin: 0px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 2.5px;
+  color: rgb(31, 34, 29);
+}
+
+.SectionText div {
+  display: block;
+  padding: 0.5em 0em 0.5em 0em;
+}
+
+.Nunta--Noastra img {
+  display: inline;
+  width: 80%;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+  border: 8px solid rgb(255, 255, 255);
+  box-shadow: rgb(0 0 0 / 25%) 0px 1px 4px;
+  align-items: center;
+}
+
+
+footer {
+  height: 50px;
+  background-image: url(../png/LargeDivider.png);
+  background-size: auto 50px;
+  background-position: center center;
+  background-repeat: repeat-x;
+}
+
+section form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+section form input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 8px 20px;
+  line-height: 1.3;
+  font-size: 14px;
+  letter-spacing: normal;
+  text-transform: none;
+  background-color: rgb(255, 255, 255);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+section form button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  vertical-align: middle;
+  font-size: 16.8px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  background-color: rgb(201, 176, 151);
+  background-image: none;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  white-space: nowrap;
+  touch-action: manipulation;
+  cursor: pointer;
+}
+
+section form button:hover {
+  background-color: rgb(189, 158, 128);
+}
+
+@media (min-width: 544px) {
+  header {
+    background-size: 1200px, auto;
+    padding: 75px 0px 0px;
+  }
+
+  .NamesContainer h1 {
+    font-size: 68.4px;
+  }
+
+  .NamesContainer div {
+    font-size: 49.6px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+  }
+
+  ul li {
+    margin: 0px 15px;
+    padding: 0px;
+
+  }
+
+  .Main--Section div,
+  section h2 {
+    font-size: 22.4px;
+  }
+}
+
+@media (min-width: 768px) {
+  header {
+    background-size: 1600px, auto;
+    padding: 100px 0px 0px;
+  }
+
+  .NamesContainer h1 {
+    font-size: 79.8px;
+  }
+
+  .Main--Section div,
+  section h2 {
+    font-size: 25.6px
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    background-size: 2000px, auto;
+    padding: 125px 0px 0px;
+  }
+
+  .NamesContainer h1 {
+    font-size: 91.2px;
+  }
+
+  .Main--Section div,
+  section h2 {
+    font-size: 28.8px
+  }
+}
+
+.CountdownContainer--JavascriptContainer div,
+.CountdownContainer--DescriptionsContainer div {
+  display: inline-block;
+  width: 75px;
+  font-size: 18px;
+}
+
+.CountdownContainer--DescriptionsContainer {
+  font-size: 18px;
+}
+
+.CountdownContainer--JavascriptContainer div {
+  font-size: 32px;
+}
+
+.CountdownContainer--DescriptionsContainer div {
+  /*text-align: left;*/
+}
+::placeholder {
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(201, 176, 151);
+}
+
+
+a:visited {
+  color: rgb(31, 34, 29);
+}
+
+p {
+  margin-bottom: 8px;
+}
+
+.Radio--Button {
+  width: 5%;
+}

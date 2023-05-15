@@ -1,0 +1,132 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <header>
+      <div class="NamesContainer">
+        <h1>Veronica</h1>
+        <div>si</div>
+        <h1>Adrian</h1>
+      </div>
+    </header>
+    <nav>
+      <ul>
+        <li>
+          <a href="#PovesteaNoastra">Acasa</a>
+        </li>
+        <li>
+          <a href="#NuntaNoastra">Cununia Religioasa</a>
+        </li>
+        <li>
+          <a href="#Petrecerea">Petrecerea</a>
+        </li>
+        <li>
+          <a href="#Intrebari">Intrebari</a>
+        </li>
+        <li>
+          <a href="#EstiInvitat">Confirmare</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <div class="Main--Section">
+        <img src="{% static 'jpg/_J2A0171.jpg' %}" alt="Veronica si Adrian" />
+        <h3>Esti invitat sa participi la celebrarea nuntii noastree in</h3>
+        <div>15 IULIE 2023</div>
+      </div>
+      <section id="PovesteaNoastra">
+        <h2>POVESTEA NOASTRA</h2>
+        <div class="SectionText">
+            <div class="Povestea--Noastra">
+                <p>
+                    Ne-am cunoscut intr-o zi de iarna, in care fulgii de zapada se leganau usor catre podea.
+                </p>
+                <p>
+                    7 luni mai tarziu am decis ca suntem meniti sa petrecem toata viata impreuna si ne-am logodit sub cel mai spectaculos apus din lume.
+                </p>
+                <p>
+                  A urmat cununia civila alaturi de familiile noastre.
+                </p>
+                <p>
+                    Acum a venit momentul sa ne cununam si in fata lui Dumnezeu.
+                </p>
+                <p>
+                    Va invitam sa celebram impreuna cel mai frumos moment din viata noastra de pana acum.
+                </p>
+            </div>
+        </div>
+        <div class="Main--CountdownContainer">
+          <div class="CountdownContainer--JavascriptContainer">
+            <div id="CountdownDays"></div>
+            <div id="CountdownHours"></div>
+            <div id="CountdownMinutes"></div>
+            <div id="CountdownSeconds"></div>
+          </div>
+          <div class="CountdownContainer--DescriptionsContainer">
+            <div>ZILE</div>
+            <div>ORE</div>
+            <div>MINUTE</div>
+            <div>SECUNDE</div>
+          </div>
+        </div>
+      </section>
+      <section id="NuntaNoastra">
+        <h2>CUNUNIA RELIGIOASA</h2>
+        <h3></h3>
+        Impreuna cu parintii
+        <div class="Nunta--Noastra">
+          <img src="{% static 'jpg/parinti_1.jpg' %}" alt="Veronica si Adrian" />
+        </div>
+        <div class="Nunta--Noastra">
+          <img src="{% static 'jpg/parinti_2.jpg' %}" alt="Veronica si Adrian" />
+        </div>
+        Si nasii nostri, Raluca si Dan
+        <div class="Nunta--Noastra">
+          <img src="{% static 'jpg/nasii.jpg' %}" alt="Veronica si Adrian" />
+        </div>
+        Va asteptam la cununia nostra religioasa, ce va avea loc in Bucuresti, <a href="https://www.google.com/maps/place/Biserica+Alb%C4%83/@44.4420713,26.0922652,17z/data=!3m1!4b1!4m6!3m5!1s0x40b1ff4fe8a53375:0xd58be3da8dcbb230!8m2!3d44.4420675!4d26.0948401!16s%2Fg%2F12h2syz4p">Biserica Alba</a>
+        incepand cu ora 16.00
+      </section>
+      <section id="Petrecerea">
+        <h2>PETRECEREA</h2>
+        <h3></h3>
+        <div>Va fi in Cernica, la <a href="https://www.google.com/maps/place/Toya+Concept+-+Casa+Cernica+Balroom+%26+More/@44.4376042,26.246335,17z/data=!3m1!4b1!4m6!3m5!1s0x40b1fba355242d63:0x8def2ae144b1b502!8m2!3d44.4376042!4d26.246335!16s%2Fg%2F11c1tr1v59">Toya Concept Events</a></div>
+        <div>Salon Eclipse</div>
+        <div>Incepand cu ora 20.00</div>
+      </section>
+      <section id="Intrebari">
+        <h2>INTREBARI</h2>
+        <h3></h3>
+        <div>Cum va pot contacta?</div>
+        <div>
+          <ul>
+          Ai la un click distanta numerele noastre de telefon:
+            <li>Vera - 0773753189</li>
+            <li>Adrian - 0720972935</li>
+          </ul>
+        </div>
+      </section>
+      <section id="EstiInvitat">
+        <h2>ESTI INVITAT</h2>    
+        <form method="POST">
+            {% csrf_token %}
+            <div>
+              <input type="text" name="nume" id="", placeholder="Numele tau">
+            </div>
+            <div>
+              <input type="number" name="numar" id="", placeholder="Numar persoane">
+            </div>
+            <div>
+              <p>Poti ajunge la nunta noastra? Te rugam sa ne confirmi pana pe 20 Iunie.
+              </p>
+              <input class="Radio--Button" type="radio" id="afirmativ" name="confirmare" value="afirmativ">
+              <label for="afirmativ">Abia astept</label><br>
+              <input class="Radio--Button" type="radio" id="negativ" name="confirmare" value="negativ">
+              <label for="negativ">Nu pot veni</label><br>
+            </div>
+            <button>SALVEAZA</button>
+        </form>
+      </section>
+    </main>
+    <footer></footer>
+{% endblock content %}
