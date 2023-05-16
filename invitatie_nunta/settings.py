@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'invitatie.apps.InvitatieConfig',
     'import_export',
+    'whitenoise.runserver_nostatic',
 ]
 
 MIDDLEWARE = [
@@ -52,6 +53,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'invitatie_nunta.urls'
@@ -87,6 +89,8 @@ DATABASES = {
     }
 }
 
+db_from_env = dj_database_url.config(conn_max_age=600)
+DATABASES['default'].update(db_from_env)
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
@@ -128,6 +132,9 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS = [
     BASE_DIR / 'static',
 ]
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 
 django_heroku.settings(locals())
 
