@@ -84,8 +84,12 @@ WSGI_APPLICATION = 'invitatie_nunta.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'd3g62rtbdrolvm',
+        'USER': 'vmrkttntfvhach',
+        'PASSWORD': '6474710ef8913e80d8823cbcdf110f66ef727992189e69868b6bd894ad31ad86',
+        'HOST': 'ec2-34-251-233-253.eu-west-1.compute.amazonaws.com',
+        'PORT': '' 
     }
 }
 
