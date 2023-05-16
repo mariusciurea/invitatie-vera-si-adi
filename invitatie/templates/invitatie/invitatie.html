@@ -108,20 +108,20 @@
       </section>
       <section id="EstiInvitat">
         <h2>ESTI INVITAT</h2>    
-        <form method="POST">
+        <form method="POST" action="">
             {% csrf_token %}
             <div>
-              <input type="text" name="nume" id="", placeholder="Numele tau">
+              <input type="text" name="nume" id="", placeholder="Numele tau" required>
             </div>
             <div>
-              <input type="number" name="numar" id="", placeholder="Numar persoane">
+              <input type="number" name="numar" id="", placeholder="Numar persoane" required>
             </div>
             <div>
               <p>Poti ajunge la nunta noastra? Te rugam sa ne confirmi pana pe 20 Iunie.
               </p>
-              <input class="Radio--Button" type="radio" id="afirmativ" name="confirmare" value="afirmativ">
+              <input class="Radio--Button" type="radio" id="afirmativ" name="confirmare" value="afirmativ" required>
               <label for="afirmativ">Abia astept</label><br>
-              <input class="Radio--Button" type="radio" id="negativ" name="confirmare" value="negativ">
+              <input class="Radio--Button" type="radio" id="negativ" name="confirmare" value="negativ" required>
               <label for="negativ">Nu pot veni</label><br>
             </div>
             <button>SALVEAZA</button>
