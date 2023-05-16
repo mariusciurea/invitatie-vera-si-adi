@@ -109,7 +109,8 @@ main {
   line-height: 1.4;
   text-transform: uppercase;
   letter-spacing: 5px;
-  font-size: 19.2px;
+  font-size: 19.8px;
+  color: rgb(13, 110, 253);
 }
 
 section {
@@ -317,8 +318,4 @@ p {
 
 .Radio--Button {
   width: 5%;
-}
-
-.Date {
-  font-size: 20px;
 }
