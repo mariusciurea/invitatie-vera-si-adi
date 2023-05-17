@@ -2,21 +2,21 @@
   font-family: "MrsEavesRomanRegular";
   font-style: normal;
   font-weight: 500;
-  src: local("MrsEavesRomanRegular"), local('MrsEavesRomanRegular'), url("../ttf/MrsEavesRomanRegular.ttf") format("truetype");
+  src: local("MrsEavesRomanRegular"), local('MrsEavesRomanRegular'), url("../ttf/MrsEavesRomanRegular.a6cd4cf1fcb7.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "MrsEavesItalicRegular";
   font-style: normal;
   font-weight: 500;
-  src: local("MrsEavesItalic"), local('MrsEavesItalic'), url("../ttf/MrsEavesItalicRegular.ttf") format("truetype");
+  src: local("MrsEavesItalic"), local('MrsEavesItalic'), url("../ttf/MrsEavesItalicRegular.35c724281997.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "WhiteGardenRegular";
   font-style: normal;
   font-weight: 400;
-  src: local("WhiteGardenRegular"), local('WhiteGardenRegular'), url("../otf/WhiteGardenRegular.otf") format("opentype");
+  src: local("WhiteGardenRegular"), local('WhiteGardenRegular'), url("../otf/WhiteGardenRegular.4b9b5e2ac949.otf") format("opentype");
 }
 
 html {
@@ -39,7 +39,7 @@ body {
 header {
   padding: 50px 0px 0px;
   background-color: transparent;
-  background-image: url(../png/Header.png), none;
+  background-image: url("../png/Header.89be28e2c091.png"), none;
   background-size: 800px, auto;
   background-position: center top, left top;
   background-repeat: no-repeat, repeat;
@@ -109,14 +109,14 @@ main {
   line-height: 1.4;
   text-transform: uppercase;
   letter-spacing: 5px;
-  font-size: 26px;
+  font-size: 22px;
   color: rgb(13, 110, 253);
 }
 
 section {
   padding: 100px 0px 80px 0px;
   background-color: transparent;
-  background-image: url(../png/SmallGraphic.png);
+  background-image: url("../png/SmallGraphic.1ffa65ccca9c.png");
   background-size: 100px 100px;
   background-position: center top;
   background-repeat: no-repeat;
@@ -155,7 +155,7 @@ section h3 {
 
 footer {
   height: 50px;
-  background-image: url(../png/LargeDivider.png);
+  background-image: url("../png/LargeDivider.ab43634177db.png");
   background-size: auto 50px;
   background-position: center center;
   background-repeat: repeat-x;

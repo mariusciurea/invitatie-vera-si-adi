@@ -109,7 +109,8 @@ main {
   line-height: 1.4;
   text-transform: uppercase;
   letter-spacing: 5px;
-  font-size: 19.2px;
+  font-size: 26px;
+  color: rgb(13, 110, 253);
 }
 
 section {
